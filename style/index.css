@@ -115,6 +115,8 @@ align-items: center;
     height: 22px;
 }
 
+ 
+
 /*so det nav kan stil be there*/
 @media screen and (max-width: 600px) {
     .primary-navigation {
