@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <header class="primary-header">
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only"></span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li>
+                    <a href="">
+                        <img src="./assets/img/image 2.png" alt="logo" class="logo-nav-bar logo-space">
+                    </a>
+                </li>
+                <div class="background-box">
+                    <li class="active nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/credit-card.png"
+                                    alt=""></span>Payment
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/price-tag.png"
+                                    alt=""></span>Promotions
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/ticket.png"
+                                    alt=""></span>Bike Pass
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/time.png"
+                                    alt=""></span>Trip History
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/friends.png"
+                                    alt=""></span>My Friends
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/qr-code.png"
+                                    alt=""></span>Add Friends
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/accessibility-fix.png"
+                                    alt=""></span>Accessibility
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/shield.png"
+                                    alt=""></span>Safety
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/chatting.png"
+                                    alt=""></span>Support
+                        </a>
+                    </li>
+                    <li class="nav-text-spacing">
+                        <a href="" class="ubuntu nav-text-size dark-blue letter-spacing-2">
+                            <span aria-hidden="true"><img class="icon-nav" src="./assets/icons/about.png"
+                                    alt=""></span>About
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div id="map"></div>
+    <script src="./js/script.js"></script>
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>
