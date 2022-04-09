@@ -5,6 +5,11 @@
 
 body {
     overflow-x: hidden;
+    height: 100%;
+}
+
+p {
+    font-size: 16px;
 }
 
 
@@ -94,6 +99,10 @@ span {
     text-decoration: none;
 }
 
+.padding-top-text {
+    padding: 6px;
+}
+
 /*number css*/
 .primary-navigation a > span [aria-hidden="true"] {
 font-weight: 700;
@@ -115,7 +124,41 @@ align-items: center;
     height: 22px;
 }
 
- 
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets/img/Group\ 1.png);
+    background-size: 100%;
+}
+
+.card-container {
+    background-color: #A8DADC;
+    margin: 16px 16px 16px 16px;
+    position: absolute;
+    bottom: 0px;
+    width: 92%;
+    border-radius: 8px;
+}
+
+.inner-container {
+    background-color: #F0F0F0;
+    margin: 16px;
+    padding: 16px;
+}
+
+.card-icons {
+    width: 32px;
+    height: 32px;
+}
+
+.margin-z {
+    margin: 0px;
+}
 
 /*so det nav kan stil be there*/
 @media screen and (max-width: 600px) {
@@ -158,3 +201,4 @@ align-items: center;
         background-image: url("../assets/img/Vector.svg");
     }
 }
+
