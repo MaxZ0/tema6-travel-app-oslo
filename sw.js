@@ -2,7 +2,8 @@ const cache_NAME = 'v1OsloBS';
 const cache_ASSETS = [
     './index.html',
     './style/index.css',
-    './js/script.js'
+    './js/script.js',
+    './manifest.json'
 ]
 
 self.addEventListener('install', (e) => {
