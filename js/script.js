@@ -1,3 +1,37 @@
+window.addEventListener('load', () => {
+  navigator.serviceWorker
+  .register('../sw.js')
+  .then(_ => console.log('Registered service worker'))
+  .catch(e => console.log('Error registering: ', e));
+});
+
+if (navigator && navigator.serviceWorker){
+  navigator.serviceWorker.register('../sw.js');
+};
+
+const registerServiceWorker = async () => {
+  if ('serviceWorker' in navigator) {
+    try {
+      const registration = await navigator.serviceWorker.register(
+        '../sw.js',
+        {
+          scope: '/',
+        }
+      );
+      if (registration.installing) {
+        console.log('Service worker installing');
+      } else if (registration.waiting) {
+        console.log('Service worker installed');
+      } else if (registration.active) {
+        console.log('Service worker active');
+      }
+    } catch (error) {
+      console.error(`Registration failed with ${error}`);
+    }
+  }
+};
+registerServiceWorker();
+
 const mapbox_key =
   "pk.eyJ1IjoibWF4em9uZSIsImEiOiJjbDFjMmJpYWQwM2loM2NtcnNqeWQ1Z2Q0In0.f42AFt0VTIyqdf6aV7vhqA";
 
@@ -13,7 +47,6 @@ async function buildMap() {
 
   const featuredStations = allStations.map((station) => {
     const status = stationStatus(station.station_id);
-    console.log(status);
     return {
       type: "Feature",
       properties: {
@@ -28,7 +61,6 @@ async function buildMap() {
       },
     };
   });
-  console.log(featuredStations);
 
   const geojson = {
     type: "FeatureCollection",
