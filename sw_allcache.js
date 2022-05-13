@@ -1,3 +1,5 @@
+//for it to cach all in the site but it dont work dont knwo why.
+
 const cache_NAME = 'v1_OsloBS_site_all';
 
 self.addEventListener('install', (e) => {
@@ -19,5 +21,5 @@ self.addEventListener('fetch', (e) => {
                 return res;
             })
         })
-    )
+    ) 
 });

@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+/*window.addEventListener('load', () => {
   navigator.serviceWorker
   .register('../sw.js')
   .then(_ => console.log('Registered service worker'))
@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 if (navigator && navigator.serviceWorker){
   navigator.serviceWorker.register('../sw.js');
 };
-
+*/
 const registerServiceWorker = async () => {
   if ('serviceWorker' in navigator) {
     try {
