@@ -9,7 +9,7 @@ async function getEvents() {
 
     events.forEach(event => {
         const container = document.getElementById('app');
-        console.log(event.name);
+        //console.log(event.name);
         const pEl = document.createElement('p');
         pEl.textContent = event.name;
         container.append(pEl)

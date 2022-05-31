@@ -31,3 +31,11 @@ const registerServiceWorker = async () => {
     }
   };
   registerServiceWorker();*/
+
+  const toSave = 'Oslo';
+  localStorage.setItem('lastvisitcity', toSave);
+
+  const lastCity = localStorage.getItem('lastvisitcity');
+  console.log(lastCity);
+
+  //lagrer på siden, det siste du var i, bedre bruker opplevelse.
